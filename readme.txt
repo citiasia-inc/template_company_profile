@@ -16,3 +16,7 @@ level: admin
 email: admin@gmail.com
 pass: password
 
+
+
+# deploy to hosting
+https://medium.com/@abuabdirohman/step-by-step-guide-deploying-and-installing-laravel-10-on-cpanel-3387b6bd7cc5
