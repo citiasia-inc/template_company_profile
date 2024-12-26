@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'created_by' => '1',
             'updated_by' => '1',
-			'picture' => 'uploads/xxx/noimage.jpg'
+			'picture' => 'noimage.jpg'
         ]);
 
         \App\Models\UserLevel::factory()->create(['id' => 1, 'name' => 'Super Admin', 'created_by' => '1', 'updated_by' => '1']);
@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Setting::factory()->create(['id' => 11, 'is_active'=> true, 'type' => 'wysiwyg', 'key' => 'faq-description', 'value' => 'Lorem Ipsum']);
         \App\Models\Setting::factory()->create(['id' => 12, 'is_active'=> true, 'type' => 'longtext', 'key' => 'contact-map', 'value' => 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123505.75790910245!2d121.05573800000002!3d14.681181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ba0942ef7375%3A0x4a9a32d9fe083d40!2sQuezon%20City%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1676356596840!5m2!1sen!2sus']);
         \App\Models\Setting::factory()->create(['id' => 13, 'is_active'=> true, 'type' => 'wysiwyg', 'key' => 'about-content', 'value' => '<h1>HTML Ipsum Presents</h1>']);
-        \App\Models\Setting::factory()->create(['id' => 14, 'is_active'=> true, 'type' => 'longtext', 'key' => 'favicon', 'value' => 'uploads/xxx/favicon.ico']);
+        \App\Models\Setting::factory()->create(['id' => 14, 'is_active'=> true, 'type' => 'longtext', 'key' => 'favicon', 'value' => 'favicon.ico']);
         \App\Models\Setting::factory()->create(['id' => 15, 'is_active'=> true, 'type' => 'text', 'key' => 'name-short', 'value' => 'ComPro']);
         \App\Models\Setting::factory()->create(['id' => 16, 'is_active'=> true, 'type' => 'longtext', 'key' => 'seo-description', 'value' => 'Citiasia adalah']);
         \App\Models\Setting::factory()->create(['id' => 17, 'is_active'=> true, 'type' => 'longtext', 'key' => 'seo-keywords', 'value' => 'city, asia, smart city, blueprint']);

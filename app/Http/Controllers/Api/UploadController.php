@@ -269,12 +269,12 @@ class UploadController extends Controller
                 'ext' => '.' . $extension,
                 'size' => $size,
                 'hash' => $filename_new,
-                'url' => 'uploads/xxx/' . $filename_new,
+                'url' => $filename_new,
             ];
             $data = Upload::create($req);
 
             if($data) {
-                return new ApiResource(true, 201, 'Insert data successfull', $data->toArray(), ['url'=>'change xxx to 100/300/500']);
+                return new ApiResource(true, 201, 'Insert data successfull', $data->toArray(), ['url'=>'size image 100/300/500']);
             } else {
                 return new ApiResource(false, 400, 'Failed to insert data', [], []);
             }
