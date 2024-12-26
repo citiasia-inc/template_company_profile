@@ -109,7 +109,7 @@
                     $('#email').val(result['data']['email']);
                     $('#name').val(result['data']['name']);
                     $("#picture").val(result['data']['picture']);
-                    $("#image-preview").attr("src", "{{ url('/') }}/" + result['data']['picture'].replace('/xxx/', '/300/'));
+                    $("#image-preview").attr("src", "{{ asset('/') }}" + 'uploads/300/' + result['data']['picture']);
                     $('#notes').val(result['data']['notes']);
                     $('#is_active').prop("checked", result['data']['is_active']);
 
@@ -157,7 +157,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#picture').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#picture').val(result['data']['url']);
                     }
                 }
             });

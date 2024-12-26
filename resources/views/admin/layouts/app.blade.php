@@ -7,37 +7,37 @@
     <title>Admin {{ $setting['name'] }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('/' . str_replace("/xxx/", "/100/", $setting["favicon"])) }}">
+    <link rel="shortcut icon" href="{{ asset('/uploads/100/' . $setting["favicon"]) }}">
 
     <!-- Library / Plugin Css Build -->
-    <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/core/libs.min.css') }}">
 
     <!-- Aos Animation Css -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/aos/dist/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/vendor/aos/dist/aos.css') }}">
 
     <!-- Hope Ui Design System Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/hope-ui.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/hope-ui.min.css?v=4.0.0') }}">
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/custom.min.css?v=4.0.0') }}">
 
     <!-- Dark Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/dark.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/dark.min.css') }}">
 
     <!-- Customizer Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/customizer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/customizer.min.css') }}">
 
     <!-- RTL Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/rtl.min.css') }}">
 
     <!-- Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/libs.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/libs.min.js') }}"></script>
 
     <!-- Function Script -->
-    <script src="{{ asset('assets/js/function.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/function.js') }}"></script>
 
     <!-- WYSIWYG Script -->
-    <script src="{{ asset('assets/vendor/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script src="{{ asset('assets/assets/vendor/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 
 </head>
 
@@ -58,10 +58,10 @@
                 <!--Logo start-->
                 <div class="logo-main">
                     <div class="logo-normal">
-                        <img src="{{ asset('/'. str_replace("/xxx/", "/300/", $setting["favicon"])) }}">
+                        <img src="{{ asset('/') . 'uploads/300/' . $setting["favicon"] }}">
                     </div>
                     <div class="logo-mini">
-                        <img src="{{ asset('/'. str_replace("/xxx/", "/100/", $setting["favicon"])) }}">
+                        <img src="{{ asset('/') . 'uploads/100/' . $setting["favicon"] }}">
                     </div>
                 </div>
                 <!--logo End-->
@@ -337,10 +337,10 @@
                         <!--Logo start-->
                         <div class="logo-main">
                             <div class="logo-normal">
-                                <img src="{{ asset('/'. str_replace("/xxx/", "/300/", $setting["favicon"])) }}">
+                                <img src="{{ asset('/') . 'uploads/300/' . $setting["favicon"] }}">
                             </div>
                             <div class="logo-mini">
-                                <img src="{{ asset('/'. str_replace("/xxx/", "/100/", $setting["favicon"])) }}">
+                                <img src="{{ asset('/') . 'uploads/100/' . $setting["favicon"] }}">
                             </div>
                         </div>
                         <!--logo End-->
@@ -369,7 +369,7 @@
                                 <a class="py-0 nav-link d-flex align-items-center" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    <img src="{{ asset('/'. str_replace("/xxx/", "/100/", $session_data['user_picture'])) }}" class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
+                                    <img src="{{ asset('/') . 'uploads/100/' . $session_data['user_picture'] }}" class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
                                     <div class="caption ms-3 d-none d-md-block ">
                                         <h6 class="mb-0 caption-title">{{ $session_data['user_name'] }}</h6>
                                         <p class="mb-0 caption-sub-title">{{ $session_data['user_level_name'] }}</p>
@@ -409,39 +409,39 @@
     </main>
 
     <!-- Validation -->
-    <script src="{{ asset('assets/js/plugins/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/additional-methods.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/additional-methods.min.js') }}"></script>
 
     <!-- Alert -->
-    <script src="{{ asset('assets/js/sweetalert2@11.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/sweetalert2@11.js') }}"></script>
 
     <!-- External Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/external.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/external.min.js') }}"></script>
 
     <!-- Widgetchart Script -->
-    <script src="{{ asset('assets/js/charts/widgetcharts.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/widgetcharts.js') }}"></script>
 
     <!-- mapchart Script -->
-    <script src="{{ asset('assets/js/charts/vectore-chart.js') }}"></script>
-    <script src="{{ asset('assets/js/charts/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/vectore-chart.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/dashboard.js') }}"></script>
 
     <!-- fslightbox Script -->
-    <script src="{{ asset('assets/js/plugins/fslightbox.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/fslightbox.js') }}"></script>
 
     <!-- Settings Script -->
-    <script src="{{ asset('assets/js/plugins/setting.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/setting.js') }}"></script>
 
     <!-- Slider-tab Script -->
-    <script src="{{ asset('assets/js/plugins/slider-tabs.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/slider-tabs.js') }}"></script>
 
     <!-- Form Wizard Script -->
-    <script src="{{ asset('assets/js/plugins/form-wizard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/form-wizard.js') }}"></script>
 
     <!-- AOS Animation Plugin-->
-    <script src="{{ asset('assets/vendor/aos/dist/aos.js') }}"></script>
+    <script src="{{ asset('assets/assets/vendor/aos/dist/aos.js') }}"></script>
 
     <!-- App Script -->
-    <script src="{{ asset('assets/js/hope-ui.js') }}" defer></script>
+    <script src="{{ asset('assets/assets/js/hope-ui.js') }}" defer></script>
 
 </body>
 

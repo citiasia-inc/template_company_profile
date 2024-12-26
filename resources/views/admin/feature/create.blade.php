@@ -86,7 +86,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#image').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#image').val(result['data']['url']);
                     }
                 }
             });

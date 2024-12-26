@@ -7,10 +7,10 @@
     <title>{{ $og['title'] . ' - ' .$setting['name'] }}</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('/'.str_replace('/xxx/', '/100/', $setting['favicon'])) }}">
-    <link rel="apple-touch-icon" href="{{ asset('/'.str_replace('/xxx/', '/100/', $setting['favicon'])) }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/'.str_replace('/xxx/', '/100/', $setting['favicon'])) }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/'.str_replace('/xxx/', '/100/', $setting['favicon'])) }}">
+    <link rel="shortcut icon" href="{{ asset('/') . 'uploads/100/' . $setting['favicon'] }}">
+    <link rel="apple-touch-icon" href="{{ asset('/') . 'uploads/100/' . $setting['favicon'] }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/') . 'uploads/100/' . $setting['favicon'] }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/') . 'uploads/100/' . $setting['favicon'] }}">
 
     <!-- SEO -->
     <meta name="description" content="{{ $setting['seo-description'] }}">
@@ -29,30 +29,30 @@
     @if(isset($og['image']))
         <meta property="og:image" content="{{ asset('/'.$og['image']) }}">
     @else
-        <meta property="og:image" content="{{ asset('/'.str_replace('/xxx/', '/300/', $setting['favicon'])) }}">
+        <meta property="og:image" content="{{ asset('/') . 'uploads/300/' . $setting['favicon'] }}">
     @endif
 
     <!-- Library / Plugin Css Build -->
-    <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/core/libs.min.css') }}">
 
     <!-- Hope Ui Design System Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/hope-ui.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/hope-ui.min.css?v=4.0.0') }}">
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/custom.min.css?v=4.0.0') }}">
 
     <!-- Dark Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/dark.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/dark.min.css') }}">
 
     <!-- Customizer Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/customizer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/customizer.min.css') }}">
 
     <!-- RTL Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/rtl.min.css') }}">
 
     <!-- SwiperSlider css -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/swiperSlider/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('landing-pages/assets/css/landing-pages.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/vendor/swiperSlider/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/client/assets/css/landing-pages.min.css') }}">
 </head>
 
 <body class=" body-bg landing-pages">
@@ -75,7 +75,7 @@
                     <div class="d-flex align-items-center justify-content-between w-100 landing-header">
                         <a href="{{url('/home')}}" class="navbar-brand m-0 d-xl-flex d-none">
                             <!--Logo start-->
-                            <img src="{{ asset('/'.str_replace("/xxx/", "/300/", $setting['favicon'])) }}">
+                            <img src="{{ asset('/') . 'uploads/300/' . $setting['favicon'] }}">
                             <!--logo End-->
                             <h5 class="logo-title">{{ $setting['name'] }}</h5>
                         </a>
@@ -90,7 +90,7 @@
 
                             <a href="{{url('/home')}}" class="navbar-brand ms-3  d-xl-none">
                                 <!--Logo start-->
-                                <img src="{{ asset('/'.str_replace("/xxx/", "/300/", $setting['favicon'])) }}">
+                                <img src="{{ asset('/') . 'uploads/300/' . $setting['favicon'] }}">
                                 <!--logo End-->
                                 <h5 class="logo-title">{{ $setting['name-short'] }}</h5>
                             </a>
@@ -135,7 +135,7 @@
                                 <div class="offcanvas-header px-0">
                                     <a href="{{url('/home')}}" class="navbar-brand ms-3  d-xl-none">
                                         <!--Logo start-->
-                                        <img src="{{ asset('/'.str_replace("/xxx/", "/300/", $setting['favicon'])) }}">
+                                        <img src="{{ asset('/') . 'uploads/300/' . $setting['favicon'] }}">
                                         <!--logo End-->
                                         <h5 class="logo-title">{{ $setting['name'] }}</h5>
                                     </a>
@@ -197,7 +197,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <a href="{{url('/home')}}" class="navbar-brand  d-flex align-items-center">
-                            <img src="{{ asset('/'.str_replace("/xxx/", "/300/", $setting['favicon'])) }}">
+                            <img src="{{ asset('/') . 'uploads/300/' . $setting['favicon'] }}">
                             <h4 class="logo-title ms-3 text-white">{{ $setting['name'] }}</h4>
                         </a>
                         <p class="text-white my-4">
@@ -246,22 +246,22 @@
                         <ul class="list-unstyled p-0 m-0 d-flex mt-4">
                             <li>
                                 <a href="{{ $setting['socmed-facebook'] }}" target="_blank">
-                                    <img src="{{ asset('assets/images/brands/08.png') }}" alt="fb" loading="lazy" class="rounded-pill">
+                                    <img src="{{ asset('assets/assets/images/brands/08.png') }}" alt="fb" loading="lazy" class="rounded-pill">
                                 </a>
                             </li>
                             <li class="ps-3">
                                 <a href="{{ $setting['socmed-twitter'] }}" target="_blank">
-                                    <img src="{{ asset('assets/images/brands/09.png') }}" alt="gm" loading="lazy" class="rounded-pill">
+                                    <img src="{{ asset('assets/assets/images/brands/09.png') }}" alt="gm" loading="lazy" class="rounded-pill">
                                 </a>
                             </li>
                             <li class="ps-3">
                                 <a href="{{ $setting['socmed-instagram'] }}" target="_blank">
-                                    <img src="{{ asset('assets/images/brands/10.png') }}" alt="im" loading="lazy" class="rounded-pill">
+                                    <img src="{{ asset('assets/assets/images/brands/10.png') }}" alt="im" loading="lazy" class="rounded-pill">
                                 </a>
                             </li>
                             <li class="ps-3">
                                 <a href="{{ $setting['socmed-linkedin'] }}" target="_blank">
-                                    <img src="{{ asset('assets/images/brands/13.png') }}" alt="li" loading="lazy" class="rounded-pill">
+                                    <img src="{{ asset('assets/assets/images/brands/13.png') }}" alt="li" loading="lazy" class="rounded-pill">
                                 </a>
                             </li>
                         </ul>
@@ -298,38 +298,38 @@
 
     <!-- offcanvas start -->
     <!-- Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/libs.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/libs.min.js') }}"></script>
 
     <!-- External Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/external.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/external.min.js') }}"></script>
 
     <!-- Widgetchart Script -->
-    <script src="{{ asset('assets/js/charts/widgetcharts.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/widgetcharts.js') }}"></script>
 
     <!-- mapchart Script -->
-    <script src="{{ asset('assets/js/charts/vectore-chart.js') }}"></script>
-    <script src="{{ asset('assets/js/charts/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/vectore-chart.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/dashboard.js') }}"></script>
 
     <!-- fslightbox Script -->
-    <script src="{{ asset('assets/js/plugins/fslightbox.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/fslightbox.js') }}"></script>
 
     <!-- Settings Script -->
-    <script src="{{ asset('assets/js/plugins/setting.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/setting.js') }}"></script>
 
     <!-- Slider-tab Script -->
-    <script src="{{ asset('assets/js/plugins/slider-tabs.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/slider-tabs.js') }}"></script>
 
     <!-- Form Wizard Script -->
-    <script src="{{ asset('assets/js/plugins/form-wizard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/form-wizard.js') }}"></script>
 
     <!-- AOS Animation Plugin-->
 
     <!-- App Script -->
-    <script src="{{ asset('assets/js/hope-ui.js') }}" defer="defer"></script>
+    <script src="{{ asset('assets/assets/js/hope-ui.js') }}" defer="defer"></script>
 
     <!-- SwiperSlider Script -->
-    <script src="{{ asset('assets/vendor/swiperSlider/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('landing-pages/assets/js/app-landing.js') }}" defer="defer"></script>
+    <script src="{{ asset('assets/assets/vendor/swiperSlider/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/client/assets/js/app-landing.js') }}" defer="defer"></script>
 </body>
 
 </html>

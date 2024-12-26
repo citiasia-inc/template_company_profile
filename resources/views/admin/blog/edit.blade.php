@@ -89,7 +89,7 @@
                     $('#slug').val(result['data']['slug']);
                     $('#datetime').val(result['data']['datetime']);
                     $("#image").val(result['data']['image']);
-                    $("#image-preview").attr("src", "{{ url('/') }}/" + result['data']['image'].replace('/xxx/', '/300/'));
+                    $("#image-preview").attr("src", "{{ asset('/') }}" + 'uploads/300/' + result['data']['image']);
                     $('#description_short').val(result['data']['description_short']);
                     $('#description_long').val(result['data']['description_long']);
                     $('#content').val(result['data']['description_long']);
@@ -166,7 +166,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#image').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#image').val(result['data']['url']);
                     }
                 }
             });

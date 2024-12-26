@@ -111,7 +111,7 @@
                     $('#name').html(result['data']['name']);
                     $('#slug').html(result['data']['slug']);
                     $('#datetime').html(convertStringToDate(result['data']['datetime']));
-                    $("#image").attr("src", "{{ url('/') }}/" + result['data']['image'].replace('/xxx/', '/300/'));
+                    $("#image").attr("src", "{{ asset('/') }}" + 'uploads/300/' + result['data']['image']);
                     $('#description_short').html(result['data']['description_short']);
                     $('#description_long').html(result['data']['description_long']);
                     $('#notes').html(result['data']['notes']);

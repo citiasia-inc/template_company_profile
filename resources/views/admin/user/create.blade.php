@@ -102,7 +102,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#picture').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#picture').val(result['data']['url']);
                     }
                 }
             });

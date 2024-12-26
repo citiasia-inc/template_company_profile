@@ -102,7 +102,7 @@
                     data: 'image',
                     render: function (data, type, row, meta) {
                         return type === 'display'
-                            ? '<img src="{{ asset("/") }}' + data.replace('/xxx/', '/100/') + '" style="max-width:100px; max-height:100px;">'
+                            ? '<img src="{{ asset("/") }}' + 'uploads/100/' + data + '" style="max-width:100px; max-height:100px;">'
                             : data;
                     }
                 },

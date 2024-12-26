@@ -10,23 +10,23 @@
     <link rel="shortcut icon" href="{{ asset('/' . $setting['favicon']) }}">
 
     <!-- Library / Plugin Css Build -->
-    <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/core/libs.min.css') }}">
 
 
     <!-- Hope Ui Design System Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/hope-ui.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/hope-ui.min.css?v=4.0.0') }}">
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.min.css?v=4.0.0') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/custom.min.css?v=4.0.0') }}">
 
     <!-- Dark Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/dark.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/dark.min.css') }}">
 
     <!-- Customizer Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/customizer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/customizer.min.css') }}">
 
     <!-- RTL Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/assets/css/rtl.min.css') }}">
 
 
 </head>
@@ -45,34 +45,34 @@
     @yield('content')
 
     <!-- Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/libs.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/libs.min.js') }}"></script>
 
     <!-- External Library Bundle Script -->
-    <script src="{{ asset('assets/js/core/external.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/core/external.min.js') }}"></script>
 
     <!-- Widgetchart Script -->
-    <script src="{{ asset('assets/js/charts/widgetcharts.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/widgetcharts.js') }}"></script>
 
     <!-- mapchart Script -->
-    <script src="{{ asset('assets/js/charts/vectore-chart.js') }}"></script>
-    <script src="{{ asset('assets/js/charts/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/vectore-chart.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/charts/dashboard.js') }}"></script>
 
     <!-- fslightbox Script -->
-    <script src="{{ asset('assets/js/plugins/fslightbox.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/fslightbox.js') }}"></script>
 
     <!-- Settings Script -->
-    <script src="{{ asset('assets/js/plugins/setting.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/setting.js') }}"></script>
 
     <!-- Slider-tab Script -->
-    <script src="{{ asset('assets/js/plugins/slider-tabs.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/slider-tabs.js') }}"></script>
 
     <!-- Form Wizard Script -->
-    <script src="{{ asset('assets/js/plugins/form-wizard.js') }}"></script>
+    <script src="{{ asset('assets/assets/js/plugins/form-wizard.js') }}"></script>
 
     <!-- AOS Animation Plugin-->
 
     <!-- App Script -->
-    <script src="{{ asset('assets/js/hope-ui.js') }}" defer></script>
+    <script src="{{ asset('assets/assets/js/hope-ui.js') }}" defer></script>
 
 
 </body>

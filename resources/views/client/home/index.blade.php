@@ -11,7 +11,7 @@
                         <li class="swiper-slide">
                             <div class="row">
                                 <div class="col-sm-6 banner-one-img text-center ms-2 ms-sm-0">
-                                    <img src="{{ asset('/' . str_replace("/xxx/", "/500/", $slider['image'])) }}" alt="" class="img-fluid ">
+                                    <img src="{{ asset('/') . 'uploads/500/' . $slider['image'] }}" alt="" class="img-fluid ">
                                 </div>
                                 <div class="col-sm-6 inner-box">
                                     <h1 class="text-secondary mb-4">
@@ -69,7 +69,7 @@
                 @foreach($teams as $team)
                 <div class="col-md-3 col-sm-2">
                     <div class="card team-image">
-                        <img src="{{ asset('/' . str_replace("/xxx/", "/300/", $team['image'])) }}" alt="team-details"
+                        <img src="{{ asset('/') . 'uploads/300/' . $team['image'] }}" alt="team-details"
                             class="img-fluid rounded-top" loading="lazy">
                         <div class="card-body">
                             <h6 class="my-2">{{ $team['name'] }}</h6>
@@ -86,7 +86,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center ">
                 @foreach ($partners as $partner)
                 <div class="col mb-md-0 mb-5 d-flex justify-content-center">
-                    <img src="{{ asset('/' . str_replace("/xxx/", "/300/", $partner['image'])) }}" alt="client-details"
+                    <img src="{{ asset('/') . 'uploads/300/' .  $partner['image'] }}" alt="client-details"
                         class="img-fluid client-img" loading="lazy">
                 </div>
                 @endforeach

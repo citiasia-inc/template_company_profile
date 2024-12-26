@@ -99,7 +99,7 @@
                     $('#name').html(result['data']['name']);
                     $('#description').html(result['data']['description']);
                     $('#link').html(result['data']['link']);
-                    $("#image").attr("src", "{{ url('/') }}/" + result['data']['image'].replace('/xxx/', '/300/'));
+                    $("#image").attr("src", "{{ asset('/') }}" + 'uploads/300/' + result['data']['image']);
                     $('#notes').html(result['data']['notes']);
                     if(result['data']['is_active'] == 1) {
                         $('#is_active').html('<span class="badge bg-success">Active</span>');

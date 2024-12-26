@@ -2,11 +2,11 @@
 
 @section('content')
 
-    <script src="{{ asset('assets/vendor/react/react.production.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/react/react-dom.production.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/vendor/react/react.production.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/vendor/react/react-dom.production.min.js') }}"></script>
 
-    <link rel="stylesheet" href="{{asset('vendor/laraberg/css/laraberg.css')}}">
-    <script src="{{ asset('vendor/laraberg/js/laraberg.js') }}"></script>
+    <link rel="stylesheet" href="{{asset('assets/assets/vendor/laraberg/css/laraberg.css')}}">
+    <script src="{{ asset('assets/assets/vendor/laraberg/js/laraberg.js') }}"></script>
 
     <div class="conatiner-fluid content-inner mt-n5 py-0" style="margin-top: 100px !important;">
         <div class="row">
@@ -127,7 +127,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#image').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#image').val(result['data']['url']);
                     }
                 }
             });

@@ -2,11 +2,11 @@
 
 @section('content')
 
-    <script src="{{ asset('assets/vendor/react/react.production.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/react/react-dom.production.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/vendor/react/react.production.min.js') }}"></script>
+    <script src="{{ asset('assets/assets/vendor/react/react-dom.production.min.js') }}"></script>
 
-    <link rel="stylesheet" href="{{asset('vendor/laraberg/css/laraberg.css')}}">
-    <script src="{{ asset('vendor/laraberg/js/laraberg.js') }}"></script>
+    <link rel="stylesheet" href="{{asset('assets/assets/vendor/laraberg/css/laraberg.css')}}">
+    <script src="{{ asset('assets/assets/vendor/laraberg/js/laraberg.js') }}"></script>
 
     <div class="conatiner-fluid content-inner mt-n5 py-0" style="margin-top: 100px !important;">
         <div class="row">
@@ -91,9 +91,9 @@
                     $('#name').val(result['data']['name']);
                     $('#slug').val(result['data']['slug']);
                     $("#image").val(result['data']['image']);
-                    $("#image-preview").attr("src", "{{ url('/') }}/" + result['data']['image'].replace('/xxx/', '/300/'));
+                    $("#image-preview").attr("src", "{{ asset('/') }}" + 'uploads/300/' + result['data']['image']);
                     $('#description_short').val(result['data']['description_short']);
-                    $('#description_long').val(result['data']['description_long']);
+                    $('#description_long').text(result['data']['description_long']);
                     $('#notes').val(result['data']['notes']);
                     $('#is_active').prop("checked", result['data']['is_active']);
 
@@ -174,7 +174,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#image').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#image').val(result['data']['url']);
                     }
                 }
             });

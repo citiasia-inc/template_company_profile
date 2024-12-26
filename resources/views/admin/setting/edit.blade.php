@@ -106,7 +106,7 @@
                 hideAll();
                 $("#value-image").show();
                 $("#image-preview").show();
-                $('#image-preview').attr('src', '/'+value.replace('/xxx/', '/300/'));
+                $('#image-preview').attr('src', '/'+value);
             }
         }
 
@@ -155,7 +155,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#value').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#value').val(result['data']['url']);
                     }
                 }
             });

@@ -61,7 +61,7 @@
                                 html += '<div class="col-lg-4 col-md-6">';
                                 html += '   <div class="card">';
                                 html += '       <div class="card-body p-3">';
-                                html += '           <img src="' + ASSET_UPLOAD + element.image.replace('/xxx/', '/300/') + '" class="img-fluid rounded" loading="lazy" style="width: 100%">';
+                                html += '           <img src="' + ASSET_UPLOAD + 'uploads/300/' + element.image + '" class="img-fluid rounded" loading="lazy" style="width: 100%">';
                                 html += '           <p></p>';
                                 html += '           <div class="d-flex align-items-center my-3">';
                                 html += '               <span>' + element.datetime_local + '</span>';

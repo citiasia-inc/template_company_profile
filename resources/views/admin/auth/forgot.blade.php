@@ -5,7 +5,7 @@
         <section class="login-content">
             <div class="row m-0 align-items-center bg-white vh-100">
                 <div class="col-md-6 d-md-block d-none bg-primary p-0 mt-n1 vh-100 overflow-hidden">
-                    <img src="{{ asset('assets/images/auth/02.png') }}" class="img-fluid gradient-main animated-scaleX" alt="images">
+                    <img src="{{ asset('assets/assets/images/auth/02.png') }}" class="img-fluid gradient-main animated-scaleX" alt="images">
                 </div>
                 <div class="col-md-6 p-0">
                     <div class="card card-transparent auth-card shadow-none d-flex justify-content-center mb-0">

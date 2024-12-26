@@ -31,7 +31,7 @@
                 <div class="col">
                     <div class="card page-bg card-block card-stretch card-height">
                         <div class="card-body">
-                            <img src="{{ asset('/' . str_replace("/xxx/", "/300/", $feature['image'])) }}" height="70px" ><br><br>
+                            <img src="{{ asset('/') . 'uploads/300/' . $feature['image'] }}" height="70px" ><br><br>
                             <h6 class="mb-3">{{ $feature['name'] }}</h6>
                             <p class="">{{ $feature['description_short'] }}</p>
                             {{-- <a href="#">Know More</a> --}}

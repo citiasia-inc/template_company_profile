@@ -100,7 +100,7 @@
                     $('#email').val(result['data']['email']);
                     $('#name').val(result['data']['name']);
                     $("#picture").val(result['data']['picture']);
-                    $("#image-preview").attr("src", "{{ url('/') }}/" + result['data']['picture'].replace('/xxx/', '/300/'));
+                    $("#image-preview").attr("src", "{{ asset('/') }}/" + result['data']['picture']);
 
                 } else {
                     $("#detail-data-success").hide();
@@ -146,7 +146,7 @@
                 contentType: false,
                 success: function (result) {
                     if(result['success'] == true) {
-                        $('#picture').val(result['data']['url'].replace('/xxx/', '/300/'));
+                        $('#picture').val(result['data']['url']);
                     }
                 }
             });
